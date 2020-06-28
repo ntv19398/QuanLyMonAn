@@ -1,0 +1,10 @@
+D:\1660728\KTLT\Thuchanh\QuanLyMonAn\QuanLyMonAn\obj\Debug\QuanLyMonAn.csprojAssemblyReference.cache
+D:\1660728\KTLT\Thuchanh\QuanLyMonAn\QuanLyMonAn\obj\Debug\QuanLyMonAn.GUI.MonAn.resources
+D:\1660728\KTLT\Thuchanh\QuanLyMonAn\QuanLyMonAn\obj\Debug\QuanLyMonAn.Properties.Resources.resources
+D:\1660728\KTLT\Thuchanh\QuanLyMonAn\QuanLyMonAn\obj\Debug\QuanLyMonAn.csproj.GenerateResource.cache
+D:\1660728\KTLT\Thuchanh\QuanLyMonAn\QuanLyMonAn\obj\Debug\QuanLyMonAn.csproj.CoreCompileInputs.cache
+D:\1660728\KTLT\Thuchanh\QuanLyMonAn\QuanLyMonAn\bin\Debug\QuanLyMonAn.exe.config
+D:\1660728\KTLT\Thuchanh\QuanLyMonAn\QuanLyMonAn\bin\Debug\QuanLyMonAn.exe
+D:\1660728\KTLT\Thuchanh\QuanLyMonAn\QuanLyMonAn\bin\Debug\QuanLyMonAn.pdb
+D:\1660728\KTLT\Thuchanh\QuanLyMonAn\QuanLyMonAn\obj\Debug\QuanLyMonAn.exe
+D:\1660728\KTLT\Thuchanh\QuanLyMonAn\QuanLyMonAn\obj\Debug\QuanLyMonAn.pdb

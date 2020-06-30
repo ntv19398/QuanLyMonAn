@@ -11,3 +11,16 @@ D:\1660728\LapTrinhWindow\ThucHanh\FoodRecipeApp\FoodRecipeApp\obj\Debug\FoodRec
 D:\1660728\LapTrinhWindow\ThucHanh\FoodRecipeApp\FoodRecipeApp\obj\Debug\FoodRecipeApp.GUI.frmDetailFood.resources
 D:\1660728\LapTrinhWindow\ThucHanh\FoodRecipeApp\FoodRecipeApp\obj\Debug\FoodRecipeApp.GUI.frmSearch.resources
 D:\1660728\LapTrinhWindow\ThucHanh\FoodRecipeApp\FoodRecipeApp\obj\Debug\FoodRecipeApp.GUI.frmAddRecipe.resources
+D:\1660728\LapTrinhWindow\ThucHanh\Foods\QuanLyMonAn\FoodRecipeApp\bin\Debug\FoodRecipeApp.exe.config
+D:\1660728\LapTrinhWindow\ThucHanh\Foods\QuanLyMonAn\FoodRecipeApp\bin\Debug\FoodRecipeApp.exe
+D:\1660728\LapTrinhWindow\ThucHanh\Foods\QuanLyMonAn\FoodRecipeApp\bin\Debug\FoodRecipeApp.pdb
+D:\1660728\LapTrinhWindow\ThucHanh\Foods\QuanLyMonAn\FoodRecipeApp\obj\Debug\FoodRecipeApp.csprojAssemblyReference.cache
+D:\1660728\LapTrinhWindow\ThucHanh\Foods\QuanLyMonAn\FoodRecipeApp\obj\Debug\FoodRecipeApp.GUI.frmDetailFood.resources
+D:\1660728\LapTrinhWindow\ThucHanh\Foods\QuanLyMonAn\FoodRecipeApp\obj\Debug\FoodRecipeApp.GUI.frmHomeScreen.resources
+D:\1660728\LapTrinhWindow\ThucHanh\Foods\QuanLyMonAn\FoodRecipeApp\obj\Debug\FoodRecipeApp.GUI.frmAddRecipe.resources
+D:\1660728\LapTrinhWindow\ThucHanh\Foods\QuanLyMonAn\FoodRecipeApp\obj\Debug\FoodRecipeApp.GUI.frmSearch.resources
+D:\1660728\LapTrinhWindow\ThucHanh\Foods\QuanLyMonAn\FoodRecipeApp\obj\Debug\FoodRecipeApp.Properties.Resources.resources
+D:\1660728\LapTrinhWindow\ThucHanh\Foods\QuanLyMonAn\FoodRecipeApp\obj\Debug\FoodRecipeApp.csproj.GenerateResource.cache
+D:\1660728\LapTrinhWindow\ThucHanh\Foods\QuanLyMonAn\FoodRecipeApp\obj\Debug\FoodRecipeApp.csproj.CoreCompileInputs.cache
+D:\1660728\LapTrinhWindow\ThucHanh\Foods\QuanLyMonAn\FoodRecipeApp\obj\Debug\FoodRecipeApp.exe
+D:\1660728\LapTrinhWindow\ThucHanh\Foods\QuanLyMonAn\FoodRecipeApp\obj\Debug\FoodRecipeApp.pdb

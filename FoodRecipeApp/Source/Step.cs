@@ -11,11 +11,14 @@ namespace FoodRecipeApp.Source
         public string urlImage { get; set; }
         public string Description { get; set; }
 
-        //public Step(string image, string video, string mota)
-        //{
-        //    this.urlImage = image;
-        //    this.urlVideo = video;
-        //    this.Description = mota;
-        //}
+        public Step(string image, string mota)
+        {
+            this.urlImage = image;
+            this.Description = mota;
+        }
+        public Step()
+        {
+
+        }
     }
 }

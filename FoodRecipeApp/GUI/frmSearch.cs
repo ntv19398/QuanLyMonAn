@@ -14,6 +14,7 @@ namespace FoodRecipeApp.GUI
     public partial class frmSearch : Form
     {
         private List<Foods> lstFood = new List<Foods>();
+        private List<Recipe> lstRecipe = new List<Recipe>();
         public frmSearch()
         {
             InitializeComponent();
@@ -22,6 +23,7 @@ namespace FoodRecipeApp.GUI
         {
             InitializeComponent();
             lstFood = DataProcess.lstFood;
+            lstRecipe = DataProcess.lstRecipes;
             LoadResult(search);
         }
         public void button_Click(object sender, EventArgs e)

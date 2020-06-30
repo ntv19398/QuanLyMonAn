@@ -31,9 +31,8 @@ namespace FoodRecipeApp.GUI
         {
             InitializeComponent();
             idfood = id;
-            lstRecipe = DataProcess.lstRecipes;
             lstFood = DataProcess.lstFood;
-            
+            lstRecipe = DataProcess.lstRecipes;
             LoadDetailFood(idfood, pos);
             getListImage();
             LoadVideo();

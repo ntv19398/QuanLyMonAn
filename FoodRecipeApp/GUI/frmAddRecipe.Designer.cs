@@ -37,11 +37,13 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.numStep = new System.Windows.Forms.NumericUpDown();
             this.txtLinkYoutube = new System.Windows.Forms.TextBox();
+            this.btnOpenFile = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.btnAddRecipe = new System.Windows.Forms.Button();
             this.flpStep = new System.Windows.Forms.FlowLayoutPanel();
             this.btnClose = new System.Windows.Forms.Button();
+            this.openFile = new System.Windows.Forms.OpenFileDialog();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numStep)).BeginInit();
             this.SuspendLayout();
@@ -92,7 +94,7 @@
             this.txtUrlImage.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUrlImage.Location = new System.Drawing.Point(148, 49);
             this.txtUrlImage.Name = "txtUrlImage";
-            this.txtUrlImage.Size = new System.Drawing.Size(207, 23);
+            this.txtUrlImage.Size = new System.Drawing.Size(163, 23);
             this.txtUrlImage.TabIndex = 3;
             // 
             // txtNameFood
@@ -100,13 +102,14 @@
             this.txtNameFood.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNameFood.Location = new System.Drawing.Point(148, 12);
             this.txtNameFood.Name = "txtNameFood";
-            this.txtNameFood.Size = new System.Drawing.Size(207, 23);
+            this.txtNameFood.Size = new System.Drawing.Size(235, 23);
             this.txtNameFood.TabIndex = 4;
             // 
             // panel1
             // 
             this.panel1.Controls.Add(this.numStep);
             this.panel1.Controls.Add(this.txtLinkYoutube);
+            this.panel1.Controls.Add(this.btnOpenFile);
             this.panel1.Controls.Add(this.txtNameFood);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label3);
@@ -117,7 +120,7 @@
             this.panel1.Controls.Add(this.label2);
             this.panel1.Location = new System.Drawing.Point(12, 73);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(358, 322);
+            this.panel1.Size = new System.Drawing.Size(386, 322);
             this.panel1.TabIndex = 10;
             // 
             // numStep
@@ -125,7 +128,7 @@
             this.numStep.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.numStep.Location = new System.Drawing.Point(148, 123);
             this.numStep.Name = "numStep";
-            this.numStep.Size = new System.Drawing.Size(207, 23);
+            this.numStep.Size = new System.Drawing.Size(235, 23);
             this.numStep.TabIndex = 10;
             this.numStep.ValueChanged += new System.EventHandler(this.numStep_ValueChanged);
             // 
@@ -134,8 +137,18 @@
             this.txtLinkYoutube.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLinkYoutube.Location = new System.Drawing.Point(148, 167);
             this.txtLinkYoutube.Name = "txtLinkYoutube";
-            this.txtLinkYoutube.Size = new System.Drawing.Size(207, 23);
+            this.txtLinkYoutube.Size = new System.Drawing.Size(235, 23);
             this.txtLinkYoutube.TabIndex = 4;
+            // 
+            // btnOpenFile
+            // 
+            this.btnOpenFile.Location = new System.Drawing.Point(317, 45);
+            this.btnOpenFile.Name = "btnOpenFile";
+            this.btnOpenFile.Size = new System.Drawing.Size(66, 30);
+            this.btnOpenFile.TabIndex = 11;
+            this.btnOpenFile.Text = "Open File";
+            this.btnOpenFile.UseVisualStyleBackColor = true;
+            this.btnOpenFile.Click += new System.EventHandler(this.btnOpenFile_Click);
             // 
             // label5
             // 
@@ -186,6 +199,10 @@
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
+            // openFile
+            // 
+            this.openFile.FileName = "openFile";
+            // 
             // frmAddRecipe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -220,5 +237,7 @@
         private System.Windows.Forms.TextBox txtLinkYoutube;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btnClose;
+        private System.Windows.Forms.Button btnOpenFile;
+        private System.Windows.Forms.OpenFileDialog openFile;
     }
 }

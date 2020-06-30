@@ -12,5 +12,15 @@ namespace FoodRecipeApp.Source
 
         public string urlVideo { get; set; }
         public List<Step> lstStep { get; set; }
+        public Recipe(int id, string url, List<Step>lst)
+        {
+            this.IdFood = id;
+            this.urlVideo = url;
+            this.lstStep = lst;
+        }
+        public Recipe()
+        {
+
+        }
     }
 }

@@ -14,15 +14,14 @@ namespace FoodRecipeApp.GUI
     public partial class frmHomeScreen : Form
     {
         private List<Foods>lstFood = new List<Foods>();
-        public frmHomeScreen()
+        public  frmHomeScreen()
         {
             InitializeComponent();
             lstFood = DataProcess.lstFood;
             LoadButtonFavoriteDish();
             LoadButtonListDish();
         }
-
-        public void button_Click(object sender, EventArgs e)
+        private void button_Click(object sender, EventArgs e)
         {
             Button btn = (Button)sender;
             frmDetailFood frm = new frmDetailFood(int.Parse(btn.Name));

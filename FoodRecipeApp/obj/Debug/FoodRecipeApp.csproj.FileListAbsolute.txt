@@ -24,3 +24,16 @@ D:\1660728\LapTrinhWindow\ThucHanh\Foods\QuanLyMonAn\FoodRecipeApp\obj\Debug\Foo
 D:\1660728\LapTrinhWindow\ThucHanh\Foods\QuanLyMonAn\FoodRecipeApp\obj\Debug\FoodRecipeApp.csproj.CoreCompileInputs.cache
 D:\1660728\LapTrinhWindow\ThucHanh\Foods\QuanLyMonAn\FoodRecipeApp\obj\Debug\FoodRecipeApp.exe
 D:\1660728\LapTrinhWindow\ThucHanh\Foods\QuanLyMonAn\FoodRecipeApp\obj\Debug\FoodRecipeApp.pdb
+G:\Vinh\QuanLyMonAn\FoodRecipeApp\bin\Debug\FoodRecipeApp.exe.config
+G:\Vinh\QuanLyMonAn\FoodRecipeApp\bin\Debug\FoodRecipeApp.exe
+G:\Vinh\QuanLyMonAn\FoodRecipeApp\bin\Debug\FoodRecipeApp.pdb
+G:\Vinh\QuanLyMonAn\FoodRecipeApp\obj\Debug\FoodRecipeApp.csprojAssemblyReference.cache
+G:\Vinh\QuanLyMonAn\FoodRecipeApp\obj\Debug\FoodRecipeApp.GUI.frmDetailFood.resources
+G:\Vinh\QuanLyMonAn\FoodRecipeApp\obj\Debug\FoodRecipeApp.GUI.frmHomeScreen.resources
+G:\Vinh\QuanLyMonAn\FoodRecipeApp\obj\Debug\FoodRecipeApp.GUI.frmAddRecipe.resources
+G:\Vinh\QuanLyMonAn\FoodRecipeApp\obj\Debug\FoodRecipeApp.GUI.frmSearch.resources
+G:\Vinh\QuanLyMonAn\FoodRecipeApp\obj\Debug\FoodRecipeApp.Properties.Resources.resources
+G:\Vinh\QuanLyMonAn\FoodRecipeApp\obj\Debug\FoodRecipeApp.csproj.GenerateResource.cache
+G:\Vinh\QuanLyMonAn\FoodRecipeApp\obj\Debug\FoodRecipeApp.csproj.CoreCompileInputs.cache
+G:\Vinh\QuanLyMonAn\FoodRecipeApp\obj\Debug\FoodRecipeApp.exe
+G:\Vinh\QuanLyMonAn\FoodRecipeApp\obj\Debug\FoodRecipeApp.pdb

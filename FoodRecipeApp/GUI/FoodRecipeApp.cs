@@ -13,6 +13,9 @@ namespace FoodRecipeApp.GUI
 {
     public partial class frmHomeScreen : Form
     {
+		public int FirstIndex = 0;
+		public int PageSize = 5;
+		public int MaxPage = 0;
         private List<Foods>lstFood = new List<Foods>();
         public  frmHomeScreen()
         {
@@ -42,7 +45,14 @@ namespace FoodRecipeApp.GUI
         }
         public void LoadButtonListDish()
         {
-            for (int i = 0; i < lstFood.Count; i++)
+			MaxPage = FirstIndex * PageSize + PageSize;
+
+			if (MaxPage >= lstFood.Count())
+			{
+				MaxPage = lstFood.Count();
+			}
+			flpListDish.Controls.Clear();
+			for (int i = FirstIndex* PageSize; i < MaxPage; i++)
             {
                 Button btn = addButton(lstFood[i].Id, lstFood[i].Name, lstFood[i].urlImage);
                 flpListDish.Controls.Add(btn);
@@ -89,5 +99,35 @@ namespace FoodRecipeApp.GUI
             frmAddRecipe frm = new frmAddRecipe();
             frm.Show();
         }
-    }
+
+		private void btnListDishNext_Click(object sender, EventArgs e)
+		{
+			FirstIndex++;
+			MaxPage = FirstIndex * PageSize + PageSize;
+			if(MaxPage > lstFood.Count)
+			{
+				btnListDishNext.Enabled = false;
+			}
+			else
+			{
+				LoadButtonListDish();
+			}
+			btnPreListDish.Enabled = true;
+
+		}
+
+		private void button1_Click(object sender, EventArgs e)
+		{
+			FirstIndex--;
+			if (FirstIndex <= 0)
+			{
+				FirstIndex = 0;
+				btnPreListDish.Enabled = false;
+
+			}
+			btnListDishNext.Enabled = true;
+			LoadButtonListDish();
+
+		}
+	}
 }

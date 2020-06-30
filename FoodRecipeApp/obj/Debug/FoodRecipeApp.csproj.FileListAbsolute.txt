@@ -37,3 +37,4 @@ G:\Vinh\QuanLyMonAn\FoodRecipeApp\obj\Debug\FoodRecipeApp.csproj.GenerateResourc
 G:\Vinh\QuanLyMonAn\FoodRecipeApp\obj\Debug\FoodRecipeApp.csproj.CoreCompileInputs.cache
 G:\Vinh\QuanLyMonAn\FoodRecipeApp\obj\Debug\FoodRecipeApp.exe
 G:\Vinh\QuanLyMonAn\FoodRecipeApp\obj\Debug\FoodRecipeApp.pdb
+G:\Vinh\QuanLyMonAn\FoodRecipeApp\obj\Debug\FoodRecipeApp.GUI.WelcomeForm.resources

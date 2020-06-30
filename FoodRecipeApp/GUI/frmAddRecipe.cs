@@ -16,7 +16,7 @@ namespace FoodRecipeApp.GUI
         public List<Recipe> lstRecipe = new List<Recipe>();
         public List<Foods> lstFood = new List<Foods>();
         private List<Label> lstLabel = new List<Label>();
-        private List<TextBox> lstTextbox = new List<TextBox>();
+        private List<TextBox> lstTextboxStep = new List<TextBox>();
         private List<TextBox> lstTbImage = new List<TextBox>();
         private List<Button> lstButton = new List<Button>();
         public frmAddRecipe()
@@ -26,11 +26,32 @@ namespace FoodRecipeApp.GUI
             lstFood = DataProcess.lstFood;
             
         }
+        public frmHomeScreen frmHome;
+        public frmAddRecipe(frmHomeScreen frmHome)
+        {
+            InitializeComponent();
+            lstRecipe = DataProcess.lstRecipes;
+            lstFood = DataProcess.lstFood;
+            this.frmHome = frmHome;
+        }
+
 
         public void numStep_ValueChanged(object sender, EventArgs e)
         {
             flpStep.Controls.Clear();
-            for(int i = 0; i < numStep.Value; i++)
+            if(lstTextboxStep.Count > 0)
+            {
+                lstTextboxStep.Clear();
+            }
+            if (lstTbImage.Count > 0)
+            {
+                lstTbImage.Clear();
+            }
+            if (lstButton.Count > 0)
+            {
+                lstButton.Clear();
+            }
+            for (int i = 0; i < numStep.Value; i++)
             {
                 Label lbStep = addLabelStep(i);
                 TextBox tbStep = addTextBoxStep(i);
@@ -46,7 +67,7 @@ namespace FoodRecipeApp.GUI
 
                 btnImage.Click += new System.EventHandler(this.btnImage_Click);
 
-                lstTextbox.Add(tbStep);
+                lstTextboxStep.Add(tbStep);
                 lstTbImage.Add(tbImage);
                 lstButton.Add(btnImage);
 
@@ -117,9 +138,9 @@ namespace FoodRecipeApp.GUI
                 Foods fd = new Foods(id, name, urlimage, islike);
                 lstFood.Add(fd);
                 List<Step> lstStep = new List<Step>();
-                for(int i = 0; i < lstTextbox.Count; i++)
+                for(int i = 0; i < lstTextboxStep.Count; i++)
                 {
-                    Step stp = new Step(lstTbImage[i].Text, lstTextbox[i].Text);
+                    Step stp = new Step(lstTbImage[i].Text, lstTextboxStep[i].Text);
                     lstStep.Add(stp);
                 }
                 Recipe rcp = new Recipe(id, txtLinkYoutube.Text, lstStep);
@@ -127,12 +148,13 @@ namespace FoodRecipeApp.GUI
                 if (check(id) == true)
                 {
                     MessageBox.Show("Successes!");
+                    frmHomeScreen frm = new frmHomeScreen(lstFood);
+                    frm.Show();
                     txtNameFood.Text = "";
                     txtUrlImage.Text = "";
                     chkFavorite.ThreeState = true;
                     numStep.Value = 0;
                     txtLinkYoutube.Text = "";
-
                 }
                 else
                     MessageBox.Show("Fail!");
@@ -173,21 +195,22 @@ namespace FoodRecipeApp.GUI
             if (openFile.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
                 int id = int.Parse(btn.Name);
-                lstTbImage[id].Text = "a";
+                lstTbImage[id].Text = openFile.FileName;
             }
         }
         private bool CheckValidation()
         {
+
             bool kt = true;
-            for(int i  = 0; i < lstTextbox.Count; i++)
+            for(int i  = 0; i < lstTextboxStep.Count; i++)
             {
-                if(lstTextbox[i].Text == "")
+                if(lstTextboxStep[i].Text == "")
                 {
                     kt = false;
                     break;
                 }
             }
-            if (txtNameFood.Text == "" || txtUrlImage.Text == "" || txtLinkYoutube.Text == "" || kt == false)
+            if (txtNameFood.Text == "" || txtUrlImage.Text == "" || txtLinkYoutube.Text == "")
             {
                 kt = false;
             }

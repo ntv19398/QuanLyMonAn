@@ -19,16 +19,33 @@ namespace FoodRecipeApp.GUI
         private List<Foods>lstFood = new List<Foods>();
         public  frmHomeScreen()
         {
+
             InitializeComponent();
             lstFood = DataProcess.lstFood;
             LoadButtonFavoriteDish();
             LoadButtonListDish();
         }
+        public frmHomeScreen(List<Foods> lstfood)
+        {
+
+            InitializeComponent();
+            lstFood = lstfood;
+            LoadButtonFavoriteDish();
+            LoadButtonListDish();
+        }
+
+
         private void button_Click(object sender, EventArgs e)
         {
             Button btn = (Button)sender;
             frmDetailFood frm = new frmDetailFood(int.Parse(btn.Name));
             frm.Show();
+        }
+        public void RelLoad()
+        {
+            lstFood = DataProcess.lstFood;
+            LoadButtonFavoriteDish();
+            LoadButtonListDish();
         }
         public void LoadButtonFavoriteDish()
         {
@@ -96,8 +113,9 @@ namespace FoodRecipeApp.GUI
 
         private void btnAddRecipe_Click(object sender, EventArgs e)
         {
-            frmAddRecipe frm = new frmAddRecipe();
+            frmAddRecipe frm = new frmAddRecipe(this);
             frm.Show();
+
         }
 
 		private void btnListDishNext_Click(object sender, EventArgs e)
